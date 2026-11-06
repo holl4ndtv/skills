@@ -1,32 +1,26 @@
 # Skills for Claude Code
 
-Free skills for Claude Code, made by Yauhen Massalski ([yauhenm.com](https://yauhenm.com)).
-Each skill has its own folder and its own README with exact steps.
+![Skills for Claude Code](.github/social-preview.png)
 
-## Start here
+**Free skills that teach Claude Code one job each. Copy a folder, and Claude knows the job.**
+Made by Yauhen Massalski. Each skill has a free 15-minute lesson on [yauhenm.com/learn](https://yauhenm.com/learn/).
 
-**What is a skill?** A skill is a folder with a text file called `SKILL.md`. It teaches Claude Code
-how to do one job well. Claude loads the skill when your request matches it.
-
-**What is Claude Code?** It is Anthropic's tool that lets Claude work on your computer.
-You need it installed before any skill here works.
-
-### The skills
-
-| Skill | What it does | Needs | Folder |
-|---|---|---|---|
-| podcast-notes | Turns a podcast episode into detailed notes on one web page | Mac, ffmpeg, whisper.cpp | [podcast-notes](https://github.com/holl4ndtv/skills/tree/main/podcast-notes) |
-| web-qc | Checks a live web page on desktop and phone before you say it is done | Node.js, Playwright | [web-qc](https://github.com/holl4ndtv/skills/tree/main/web-qc) |
-| loop-spec | Plans a repeating AI job with a real stop rule and proof | Nothing extra | [loop-spec](https://github.com/holl4ndtv/skills/tree/main/loop-spec) |
-| write-a-skill | Helps Claude write a new skill the right way (Matt Pocock's method plus my rules) | Nothing extra | [write-a-skill](https://github.com/holl4ndtv/skills/tree/main/write-a-skill) |
-
-Skills I use that someone else made. I do not copy them. Use the original:
-
-| Skill | What it does | Original |
+| Skill | What it does | Free lesson |
 |---|---|---|
-| stop-slop | Removes typical AI writing habits from any text | [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) |
-| last30days | Finds what people say about a topic in the last 30 days | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) |
-| grilling | Questions you hard on a plan until it holds up | [mattpocock/skills](https://github.com/mattpocock/skills) (`productivity/grilling`) |
+| [podcast-notes](podcast-notes) | Turns any podcast episode into clear notes on one page | [Notes from any podcast](https://yauhenm.com/learn/podcast/1/) |
+| [web-qc](web-qc) | Checks a web page on a phone and a computer before you share it | [Check it on a phone](https://yauhenm.com/learn/phone-check/1/) |
+| [loop-spec](loop-spec) | Plans an AI job that repeats, with a finish line it can check | [Give AI a finish line](https://yauhenm.com/learn/goal/1/) |
+| [write-a-skill](write-a-skill) | Helps Claude write a new skill the right way | [Teach AI a task one time](https://yauhenm.com/learn/skills/1/) |
+
+**Good skills by other people.** I use these every day. Get them from the original author:
+
+| Skill | What it does | Original | Free lesson |
+|---|---|---|---|
+| stop-slop | Removes typical AI writing habits from text | [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) | [Make AI write like you](https://yauhenm.com/learn/voice/1/) |
+| last30days | Finds what people said about a topic this month | [mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill) | [What are people saying?](https://yauhenm.com/learn/last30days/1/) |
+| grilling | Asks you hard questions about a plan until it holds up | [mattpocock/skills](https://github.com/mattpocock/skills) | [Let AI question your plan](https://yauhenm.com/learn/grill/1/) |
+
+**Words you need.** *Claude Code* is Anthropic's app that lets Claude work on your computer. A *skill* is a folder with a `SKILL.md` text file. Claude reads it when your request matches the job.
 
 ## Install any skill
 
