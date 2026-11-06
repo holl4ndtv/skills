@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{SHOW}}: notes on {{N}} episode(s)</title>
+<style>
+  /* Self-contained: no fonts, no images, no scripts. Reads well at 375px. */
+  :root{--bg:#f7f5f0;--ink:#1d1d1b;--soft:#5d5a53;--line:#dedad0;--accent:#9a3b1f;--card:#fffdf8;--tag:#efe9dc}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Georgia,"Iowan Old Style",serif}
+  main{max-width:720px;margin:0 auto;padding:28px 20px 80px}
+  h1{font:700 28px/1.2 -apple-system,Helvetica,Arial,sans-serif;margin:0 0 6px;letter-spacing:-.01em}
+  h2{font:700 22px/1.25 -apple-system,Helvetica,Arial,sans-serif;margin:56px 0 4px;padding-top:20px;border-top:3px solid var(--ink)}
+  h3{font:700 16px/1.3 -apple-system,Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin:34px 0 10px}
+  p{margin:0 0 14px}
+  .meta{font:14px/1.5 -apple-system,Helvetica,Arial,sans-serif;color:var(--soft);margin-bottom:18px}
+  .toc{font:15px/1.5 -apple-system,Helvetica,Arial,sans-serif;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin:20px 0}
+  .toc a{color:var(--ink)}
+  .big{background:var(--card);border-left:4px solid var(--accent);padding:14px 18px;margin:16px 0 22px;border-radius:0 8px 8px 0}
+  ul{padding-left:20px;margin:0 0 14px}
+  li{margin:0 0 10px}
+  .t{font:600 12px/1 ui-monospace,Menlo,monospace;background:var(--tag);color:var(--soft);padding:3px 6px;border-radius:4px;margin-right:6px;white-space:nowrap}
+  .who{font:600 12px/1 -apple-system,Helvetica,Arial,sans-serif;color:var(--accent);margin-right:6px}
+  .small li{border-left:2px solid var(--line);padding-left:10px;list-style:none;margin-left:-20px}
+  blockquote{margin:12px 0 18px;padding:2px 0 2px 16px;border-left:3px solid var(--line);color:#3b3934;font-style:italic}
+  blockquote span{font-style:normal;color:var(--soft);font-size:14px}
+  .use li{list-style:none;margin-left:-20px;padding-left:28px;position:relative}
+  .use li:before{content:"→";position:absolute;left:4px;color:var(--accent);font-weight:700}
+  .note{font:13px/1.5 -apple-system,Helvetica,Arial,sans-serif;color:var(--soft);margin-top:40px;border-top:1px solid var(--line);padding-top:14px}
+  b{font-weight:700}
+</style>
+</head>
+<body>
+<main>
+
+<h1>{{SHOW}}: {{PAGE_TITLE}}</h1>
+<div class="meta">Show: <i>{{SHOW}}</i> · Each line has a time stamp, so you can jump to that minute in the episode.</div>
+
+<div class="toc">
+<!-- one line per episode -->
+<b>Ep 1</b> · <a href="#ep1">{{GUEST}}: {{SHORT_HOOK}}</a> · {{DATE}} · {{DURATION}} min<br>
+<b>All</b> · <a href="#use">Ideas you can use</a>
+</div>
+
+<!-- ============ EP 1 (repeat this block per episode) ============ -->
+<h2 id="ep1">Ep 1 · {{GUEST}}</h2>
+<div class="meta">{{WHO_WHAT_ONE_LINER: who the guest is, what they built, why they are on. One or two sentences.}} Ads run at {{AD_RANGES}}, so you can skip them.</div>
+
+<div class="big"><b>The main idea:</b> {{MAIN_IDEA: 3–5 sentences. The one thing to remember, how the person wins, and the most moving part of the talk.}}</div>
+
+<h3>1. {{TOPIC_SECTION_TITLE}}</h3>
+<ul>
+<li><span class="t">{{m:ss}}</span>{{Fact with owner. Keep the WHY. Keep numbers with dates.}}</li>
+<li><span class="t">{{m:ss}}</span><span class="who">Dana (host)</span>{{A host fact or story is marked like this.}}</li>
+<li><span class="t">{{m:ss}}</span>{{Second-hand line keeps the chain: "Odile told Marco: '…'"}}</li>
+</ul>
+
+<h3>2. {{TOPIC_SECTION_TITLE}}</h3>
+<ul>
+<li><span class="t">{{m:ss}}</span>{{…}}</li>
+</ul>
+
+<!-- 6–9 topic sections. Always include the origin story if the episode has one. -->
+
+<h3>Small things worth noticing</h3>
+<ul class="small">
+<li><span class="t">{{m:ss}}</span>{{A habit, an exact phrase, a named book or person, a single number, a contrarian aside, a telling joke. 6–12 of these. Each must pass a rubric section-3 test.}}</li>
+</ul>
+
+<h3>Best lines</h3>
+<blockquote>"{{near-verbatim line, under 15 words}}" <span>— {{speaker}}, {{m:ss}}</span></blockquote>
+<blockquote>"{{…}}" <span>— {{speaker}}, {{m:ss}}</span></blockquote>
+
+<!-- ============ USE (one section for the whole page) ============ -->
+<h2 id="use">Ideas you can use</h2>
+<ul class="use">
+<li><b>{{Short imperative title.}}</b> {{One action, one sentence on why, from the episode.}}</li>
+</ul>
+
+<div class="note">These notes come from an automatic transcript (Whisper on the Mac). Lines in quote marks are close to what was said, not always word for word. Names fixed from the transcript: {{Marko→Marco, …}}. Time stamps are minutes:seconds into the episode.</div>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "episode": "The Bread Hour: Marco Bell (made-up sample)",
+  "blocks": "sample-blocks.txt",
+  "why": "A tiny invented example, so you can check that the test scripts run. It is not from a real episode.",
+  "must_have": [
+    {"id": "origin-odile", "pattern": "Odile", "why": "origin story: the head baker who lent him the book (2:15)"},
+    {"id": "taste-dough", "pattern": "tastes every", "why": "small thing: he tastes every new batch (5:15)"},
+    {"id": "six-steps", "pattern": "more than six steps", "why": "rule of thumb (9:00)"}
+  ],
+  "must_not": [
+    {"id": "lease-year", "all": ["lease", "2018"], "none": [], "why": "the lease year was never said"}
+  ],
+  "owner": [
+    {"id": "wedding-cake-is-dana", "match": "wedding cake", "require": "Dana", "forbid": "Marco drove", "why": "the wedding cake story belongs to the host"}
+  ]
+}
